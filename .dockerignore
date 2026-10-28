@@ -1,0 +1,9 @@
+data
+node_modules
+integration.test.mjs
+.git
+.env
+*.log
+README.md
+evidencias
+  
