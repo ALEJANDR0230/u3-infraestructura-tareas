@@ -1,0 +1,16 @@
+services:
+  web:
+    build: .
+    image: u3-tareas:1.0.0
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      PORT: "3000"
+      DATA_DIR: /data
+      APP_ENV: Docker local
+    volumes:
+      - tareas-data:/data
+    restart: unless-stopped
+volumes:
+  tareas-data:
+  
